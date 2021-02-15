@@ -11,6 +11,10 @@ html, body {
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f1f1f1;
     color: #181818;
@@ -38,13 +42,17 @@ body {
 }
 
 .header-sticky {
-    background-color: #181818;
+    background-color: #202020;
     padding: 20px 0px;
 }
 
 .header-sticky .logo,
 .header-sticky .nav ul li a {
     color: #f1f1f1;
+}
+
+.header-sticky nav a.active {
+    border-bottom: 3px solid #f1f1f1;
 }
 
 .header .container {
@@ -81,6 +89,12 @@ body {
     font-size: 18px;
     text-transform: capitalize;
     text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 7px;
+}
+
+.nav a.active {
+    border-bottom: 3px solid #292929;
 }
 
 .hero {
